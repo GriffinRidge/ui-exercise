@@ -3,10 +3,14 @@ body {
     font-size: 16px;
     padding: 0;
     margin: 0;
+    background-color: #fff;
+    color: #777;
 }
 
 header {
-    padding: 4px 16px;
+    padding: 0 0;
+    background-color: #eee;
+    text-align: center;
 }
 
 nav ul {
@@ -19,23 +23,65 @@ nav li {
     display: inline-block;
 }
 
+nav a {
+    color: #003344;
+    text-decoration: none;
+    font-weight: 200;
+    padding: 16px 24px;
+    display: inline-block;
+}
+
+nav a:hover,
+nav a:active {
+    background-color: #CCC;
+}
+
+main {
+    display: flex;
+}
+
 main section {
     width: 70%;
     margin: 0;
     padding: 16px;
     display: inline-block;
     box-sizing: border-box;
-
+    display: flex;
+    flex-wrap: wrap;
 }
 
-main aside {
+article {
+    width: 100%;
+    padding: 12px;
+    box-sizing: border-box;
+}
+
+article img {
+    width: 100%;
+}
+
+@media all and (min-width: 700px) {
+    article {
+        width: 50%;
+    }
+}
+
+@media all and (min-width: 1350px) {
+    article {
+        width: 33.33%;
+    }
+}
+
+aside {
     width: 30%;
     margin: 0;
     padding: 16px;
-    float: right;
     box-sizing: border-box;
 }
 
 footer {
     padding: 16px;
+    background-color: #eee;
+    color: #666;
+    font-size: 12px;
 }
